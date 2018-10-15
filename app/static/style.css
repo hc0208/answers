@@ -1,0 +1,139 @@
+/* http://meyerweb.com/eric/tools/css/reset/ v2.0 | 20110126 License:none (public domain) */
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline;}
+/* HTML5 display-role reset for older browsers */
+article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block;}
+body{line-height:1;}ol,ul{list-style:none;}blockquote,q{quotes:none;}blockquote:before,blockquote:after,q:before,q:after{content:'';content:none;}table{border-collapse:collapse;border-spacing:0;}
+
+body {
+  margin: 0 auto;
+  max-width: 650px;
+  padding: 0 15px;
+}
+
+main {
+  padding-bottom: 70px;
+}
+
+header {
+  display: flex;
+  height: 70px;
+  justify-content: space-between;
+}
+
+header ul a {
+  margin: 19px 0 12px 0;
+}
+
+h1 {
+  font-family: 'Fredoka One', cursive;
+  font-size: 32px;
+  line-height: 70px;
+}
+
+h2 {
+  font-family: 'Fredoka One', cursive;
+  font-size: 28px;
+  margin-top: 70px;
+  padding-bottom: 15px;
+  text-align: center;
+}
+
+h1 a {
+  color: #000;
+  text-decoration: none;
+}
+
+ul {
+  display: flex;
+}
+
+ul li {
+  margin-left: 15px;
+}
+
+form {
+  max-width: 300px;
+  margin: 0 auto;
+}
+
+form input[type="submit"] {
+  border: 0;
+  font-size: 17px;
+  outline: none;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="number"],
+textarea {
+  background: none;
+  border: 0;
+  border-radius: 0;
+  outline: none;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="number"],
+textarea {
+  border-bottom: 2px solid #eee;
+  display: block;
+  font-size: 20px;
+  margin-top: 35px;
+  padding: 8px 2px;
+  width: 100%;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus {
+  border-bottom: 2px solid #333;
+}
+
+hr {
+  border: solid 1px #eee;
+  margin-top: 27px;
+}
+
+.button {
+  background-color: #333;
+  border-radius: 20px;
+  color: #fff;
+  display: inline-block;
+  margin: 19px 0 12px 0;
+  padding: 10px 15px;
+  text-decoration: none;
+}
+
+.label {
+  background-color: #333;
+  border-radius: 6px;
+  color: #fff;
+  font-size: 12px;
+  padding: 5px 7px;
+  text-decoration: none;
+}
+
+.center {
+  text-align: center;
+  margin: 35px 0;
+}
+
+.right {
+  text-align: right;
+}
+
+.question-title {
+  font-family: 'Fredoka One', cursive;
+  font-size: 22px;
+  margin-top: 40px;
+}
+
+.question-footer {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+}
+
+.answer {
+  padding: 25px 3px 10px;
+}

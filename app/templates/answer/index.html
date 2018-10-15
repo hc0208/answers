@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+
+{% block header %}
+  <h2>{% block title %}{{ question['title'] }}{% endblock %}</h2>
+{% endblock %}
+
+{% block content %}
+  <p>{{ question['body'] }}</p>
+  <hr>
+  {% for answer in answers %}
+    <div class="answer">
+      <p>{{ answer['body'] }}</p>
+    </div>
+    {% if g.user['id'] == question['user_id'] %}
+      <div class="right">
+        <a href="{{ url_for('main.reward', question_id=question['id'], answer_id=answer['id']) }}" class="label">Choose</a>
+      </div>
+    {% endif %}
+    <hr>
+  {% endfor %}
+  {% if g.user['id'] != question['user_id'] %}
+    <div class="center">
+      <a href="{{ url_for('main.answer_create', question_id=question['id']) }}" class="button">New Answer</a>
+    </div>
+  {% endif %}
+{% endblock %}
