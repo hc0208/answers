@@ -142,6 +142,8 @@ def reward(question_id, answer_id):
             'data': data
         }
         web3.personal.sendTransaction(transaction, os.environ['OWNER_ADDRESS_PASSWORD'])
+        # JSON-RPC
+        # curl -X POST --data '{"jsonrpc":"2.0","method":"personal_sendTransaction","params":[{"from": "OWNER_ADDRESS", "to": "CONTRACT_ADDRESS", "data":"0xa9059cbb + 付与先アドレス(32byte) + 付与したいトークン数(32byte)"}, "OWNER_ADDRESS_PASSWORD"],"id":67}' -H "Content-Type: application/json" http://127.0.0.1:8545/
     else:
         error = 'Invalid Access'
         flash(error)
